@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Recipes</title>
+    <title>Forkify</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <h1>Pizza Recipes</h1>
-        <div id="recipies"></div>
-    </div>
+    <div class="container-navbar">
+        <div class="navbar">
+            <div class="image">
+                <img src="https://forkify-demo.netlify.app/img/logo.png" alt="">
+            </div>
+            <div class="inputArea">
+                <input type="text" placeholder="Search Recipes" id="userInput">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            </div>
+            <div class="addrecipe-bookmarks">
+                <div class="addrecipe"><i class="fa-regular fa-pen-to-square"></i> ADD RECIPE</div>
+                <div class="bookmarks"><i class="fa-regular fa-bookmark"></i> BOOKMARKS</div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <h1>Recipes</h1>
+            <div id="recipes"></div>
+        </div>
 
     <script src="app.js"></script>
 </body>
